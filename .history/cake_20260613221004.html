@@ -53,20 +53,20 @@
     const totalCandles = 5;
 
     // Propojení svíček s otázkami
-    document.querySelectorAll(".candle").forEach(candle => {
-        let id = candle.dataset.id;
+document.querySelectorAll(".candle").forEach(candle => {
+    let id = candle.dataset.id;
 
-        // Pokud je svíčka už hotová → zakážeme kliknutí
-        if (localStorage.getItem("candle" + id) === "true") {
-            candle.style.pointerEvents = "none"; // nejde kliknout
-            return;
-        }
+    // Pokud je svíčka už hotová → zakážeme kliknutí
+    if (localStorage.getItem("candle" + id) === "true") {
+        candle.style.pointerEvents = "none"; // nejde kliknout
+        return;
+    }
 
-        // Jinak normálně funguje
-        candle.onclick = () => {
-            window.location.href = `q${id}.html`;
-        };
-    });
+    // Jinak normálně funguje
+    candle.onclick = () => {
+        window.location.href = `q${id}.html`;
+    };
+});
 
 
     // Po načtení stránky nastavíme sfouknuté svíčky
