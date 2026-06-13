@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Přáníčko 🎁</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .wish-text {
+            font-size: 1.3rem;
+            line-height: 1.7;
+            margin-top: 20px;
+        }
+
+        .wish-img {
+            width: 260px;
+            margin-top: 25px;
+            border-radius: 12px;
+        }
+
+        .wish-layout {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .wish-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .wish-photo {
+            width: 140px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .wish-center {
+            max-width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wish-layout">
+
+        <div class="wish-column left-col">
+            <img src="/bladenight.jpg" class="wish-photo">
+            <img src="/kamarad.jpg" class="wish-photo">
+            <img src="/stitch_ears.png" class="wish-photo">
+        </div>
+
+        <div class="wish-center">
+            <h1>🎉 Všechno nejlepší! 🎉</h1>
+
+            <p class="wish-text">
+                Takže, Andulko, tohle je konec začátku zážitků, které nás spolu čekají. Přeji ti ještě jednou všechno
+                nejlepší k narozeninám, hodně štěstíčka, zdravíčka, pohody a hlavně té lásky, která na tebe ve světě
+                čeká. Mám tě strašně moc rád a ani nevíš jak moc si tě vážím. Doufám že se ti toto "dobrodružství"
+                líbilo a že tě potěšilo. Jsi pěkná a ještě jeden rok mladá holka, takže se neboj a využij toho jak jen
+                můžeš.
+                🫶🫶🫶🎉🎂
+            </p>
+
+            <button class="btn" onclick="goHome()">Zpět na začátek</button>
+        </div>
+
+        <div class="wish-column right-col">
+            <img src="foto4.jpg" class="wish-photo">
+            <img src="foto5.jpg" class="wish-photo">
+            <img src="foto6.jpg" class="wish-photo">
+        </div>
+
+    </div>
+</body>

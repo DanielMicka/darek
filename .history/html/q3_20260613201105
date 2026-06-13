@@ -1,0 +1,1 @@
+        <div class="answer" onclick="check(this, true)">Správná odpověď</div>

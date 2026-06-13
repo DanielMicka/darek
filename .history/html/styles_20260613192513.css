@@ -1,0 +1,113 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: white;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* vždy na střed */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Kontejner pro obsah */
+.container {
+    max-width: 700px;
+    width: 100%;
+}
+
+/* Obrázky */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tlačítko */
+.btn {
+    margin-top: 35px;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    background: #4aa3ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1f8bff;
+    transform: scale(1.05);
+}
+
+/* Nadpisy */
+h1 {
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Animace */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade {
+    animation: fadeIn 1.2s ease;
+}
+.cake-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.cake {
+    width: 300px;
+}
+
+/* Všechny svíčky */
+.candle {
+    position: absolute;
+    width: 80px; /* upravíš podle obrázku */
+    cursor: pointer;
+}
+/* Svíčka 1 */
+.c1 {
+    top: 0.1%;
+    left: 13%;
+}
+
+/* Svíčka 2 */
+.c2 {
+    top: 1%;
+    left: 40%;
+}
+
+/* Svíčka 3 */
+.c3 {
+    top: 0.1%;
+    left: 60%;
+}
+
+/* Svíčka 4 */
+.c4 {
+    top: 3%;
+    left: 30%;
+}
+
+/* Svíčka 5 */
+.c5 {
+    top: 3%;
+    left: 50%;
+}

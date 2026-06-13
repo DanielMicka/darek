@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Všechno nejlepší 🎉</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: white;
+            font-family: "Poppins", sans-serif;
+            color: #333;
+            text-align: center;
+        }
+
+        .content {
+            margin-top: 60px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        img {
+            width: 260px;
+            height: auto;
+            margin-bottom: 20px;
+            animation: pop 0.6s ease;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .btn {
+            margin-top: 35px;
+            padding: 15px 35px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 30px;
+            background: #4aa3ff;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1f8bff;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pop {
+            from { transform: scale(0.8); opacity: 0; }
+            to   { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <img src="/stit.png" alt="Stitch">
+
+    <h1>🎉 Všechno nejlepší k 17 🎉</h1>
+
+    <p>
+        Dneska slavíš, takže jsem ti připravil něco malého.  
+        Takový mini narozeninový zážitek, který je jen pro tebe.
+    </p>
+
+    <p>
+        Čeká tě dort, svíčky, otázky a nakonec i jedno malé překvapení.
+    </p>
+
+    <button class="btn" onclick="start()">Pokračovat</button>
+</div>
+
+<script>
+function start() {
+    window.location.href = "cake.html";
+}
+</script>
+
+</body>
+</html>

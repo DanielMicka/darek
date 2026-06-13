@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Otázka 2</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .answers {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .answer {
+            padding: 15px;
+            background: #eee;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .answer:hover {
+            background: #ddd;
+        }
+
+        .correct {
+            background: #4CAF50 !important;
+            color: white;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        img.question-img {
+            width: 260px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container fade">
+
+        <h2>Otázka 2</h2>
+
+        <p style="margin-top: 10px; font-size: 1.3rem;">
+            Jakou barvu má nápis skill issue?
+        </p>
+
+        <img src="/20260107_192204" class="question-img" alt="Obrázek k otázce">
+
+        <div class="answers">
+            <div class="answer" onclick="check(this, false)">modrou </div>
+            <div class="answer" onclick="check(this, true)">růžovou</div>
+            <div class="answer" onclick="check(this, false)">zelenou</div>
+            <div class="answer" onclick="check(this, false)">žlutou</div>
+        </div>
+
+    </div>
+
+    <script>
+        function check(element, correct) {
+            if (correct) {
+                element.classList.add("correct");
+
+                // uložíme, že svíčka 2 je hotová
+                localStorage.setItem("candle2", "true");
+
+                // po 1 sekundě návrat na dort
+                setTimeout(() => {
+                    window.location.href = "cake.html";
+                }, 1000);
+
+            } else {
+                // špatná odpověď zmizí
+                element.classList.add("hidden");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

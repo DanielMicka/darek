@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Otázka 5</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .answers {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .answer {
+            padding: 15px;
+            background: #eee;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .answer:hover {
+            background: #ddd;
+        }
+
+        .correct {
+            background: #4CAF50 !important;
+            color: white;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        img.question-img {
+            width: 260px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container fade">
+
+    <h2>Otázka 5</h2>
+
+    <p style="margin-top: 10px; font-size: 1.3rem;">
+        Jak se jmenuje písnička na náš ploužák?
+    </p>
+
+    <img src="" class="question-img" alt="Obrázek k otázce">
+
+    <div class="answers">
+        <div class="answer" onclick="check(this, false)">Die With a Smile</div>
+        <div class="answer" onclick="check(this, false)">Let it Go</div>
+        <div class="answer" onclick="check(this, true)">Sign of the Times</div>
+        <div class="answer" onclick="check(this, false)">Gasolina</div>
+    </div>
+
+</div>
+
+<script>
+function check(element, correct) {
+    if (correct) {
+        element.classList.add("correct");
+
+        // uložíme, že svíčka 5 je hotová
+        localStorage.setItem("candle5", "true");
+
+        // po 1 sekundě návrat na dort
+        setTimeout(() => {
+            window.location.href = "cake.html";
+        }, 1000);
+
+    } else {
+        // špatná odpověď zmizí
+        element.classList.add("hidden");
+    }
+}
+</script>
+
+</body>
+</html>

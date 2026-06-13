@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Všechno nejlepší 🎉</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: white;
+            font-family: "Poppins", sans-serif;
+            color: #333;
+            text-align: center;
+        }
+
+        .content {
+            margin-top: 60px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        img {
+            width: 260px;
+            height: auto;
+            margin-bottom: 20px;
+            animation: pop 0.6s ease;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .btn {
+            margin-top: 35px;
+            padding: 15px 35px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 30px;
+            background: #4aa3ff;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1f8bff;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pop {
+            from { transform: scale(0.8); opacity: 0; }
+            to   { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <img src="/stitch_break.png" alt="Stitch_break">
+
+    <h1>🎉 Všechno nejlepší 🎉</h1>
+
+    <p>
+        Andulko, dnes je den, který jen tak jednoduše nepřekonám. Čeká tě dort, svíčky a také menší rekapitulace toho, co jsme spolu za tu krátkou dobu zažili a věřím, že to je jenom začátek něčeho velkého.
+    </p>
+
+    <p style="margin-top: 3rem;">
+        Nebudu nadále zdržovat, čeká tě dort se spoustou svíček, které ti splní všechna přání, ale jelikož nic není zadarmo, musíš si je nejdříve sfouknout.
+    </p>
+
+    <button class="btn" onclick="start()">Pokračovat</button>
+</div>
+
+<!-- 🔽 Druhá sekce – dort -->
+<div id="cake-section" style="margin-top: 120px; padding: 40px 0; text-align: center;">
+
+    <h2 style="font-size: 2rem; margin-bottom: 10px;">🎂 Tvůj narozeninový dort</h2>
+
+    <p style="font-size: 1.2rem; margin-bottom: 25px;">
+        Tady začíná tvoje narozeninová výzva. Klikni na svíčky, až budou přidané.
+    </p>
+
+    <div style="position: relative; display: inline-block;">
+        <img src="cake.png" class="cake" alt="Dort" style="width: 300px; height: auto;">
+    </div>
+
+</div>
+
+
+<script>
+function start() {
+    window.location.href = "cake.html";
+}
+</script>
+
+</body>
+</html>
