@@ -16,22 +16,22 @@
         <p>Klikni na svíčky (až budou přidané) a začni svou narozeninovou výzvu.</p>
 
         <div class="cake-wrapper" style="margin-top: 50px;">
-            <img src="cake.png" class="cake">
+            <img src="/cake.png" class="cake">
 
             <!-- Svíčka 1 -->
-            <img src="svíčka_ende.png" class="candle c1" data-id="1">
+            <img src="/svíčka_ende.png" class="candle c1" data-id="1">
 
             <!-- Svíčka 2 -->
-            <img src="svíčka_ende.png" class="candle c2" data-id="2">
+            <img src="/svíčka_ende.png" class="candle c2" data-id="2">
 
             <!-- Svíčka 3 -->
-            <img src="svíčka_ende.png" class="candle c3" data-id="3">
+            <img src="/svíčka_ende.png" class="candle c3" data-id="3">
 
             <!-- Svíčka 4 -->
-            <img src="svíčka_ende.png" class="candle c4" data-id="4">
+            <img src="/svíčka_ende.png" class="candle c4" data-id="4">
 
             <!-- Svíčka 5 -->
-            <img src="svíčka_ende.png" class="candle c5" data-id="5">
+            <img src="/svíčka_ende.png" class="candle c5" data-id="5">
         </div>
 
         <button id="wish-btn" class="btn" style="display:none; margin-top:30px;">
@@ -65,7 +65,7 @@
     for (let i = 1; i <= totalCandles; i++) {
         if (localStorage.getItem("candle" + i) === "true") {
             const c = document.querySelector(`.candle[data-id="${i}"]`);
-            if (c) c.src = "svíčka-ohen.png"; // tvoje sfouknutá verze
+            if (c) c.src = "/svíčka-ohen.png"; // tvoje sfouknutá verze
         }
     }
 

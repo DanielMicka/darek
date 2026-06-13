@@ -65,7 +65,7 @@
     for (let i = 1; i <= totalCandles; i++) {
         if (localStorage.getItem("candle" + i) === "true") {
             const c = document.querySelector(`.candle[data-id="${i}"]`);
-            if (c) c.src = "svíčka-ohen.png"; // tvoje sfouknutá verze
+            if (c) c.src = "/svíčka-ohen.png"; // tvoje sfouknutá verze
         }
     }
 

@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>Otázka 3</title>
+    <title>Otázka 1</title>
     <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -45,19 +45,22 @@
 
 <div class="container fade">
 
-    <h2>Otázka 3</h2>
+    <h2>Otázka 1</h2>
 
     <p style="margin-top: 10px; font-size: 1.3rem;">
-        Kam jsme měli jet na rodinnou dovolenou, ale nakonec jsme nejeli nikam?
+        Jaký tanec jsme si spolu zatančili jako první?
     </p>
 
-    <img src="rodina.jpg" class="question-img" alt="Obrázek k otázce">
+    <video class="question-video" autoplay muted playsline>
+    <source src="/VID_20251216_100108_481.mp4" type="video/mp4">
+</video>
+
 
     <div class="answers">
-        <div class="answer" onclick="check(this, false)">Sicílie</div>
-        <div class="answer" onclick="check(this, false)">Řím</div>
-        <div class="answer" onclick="check(this, false)">Korsika</div>
-        <div class="answer" onclick="check(this, true)">Sardinie</div>
+        <div class="answer" onclick="check(this, false)">chacha</div>
+        <div class="answer" onclick="check(this, false)">waltz</div>
+        <div class="answer" onclick="check(this, true)">mambo</div>
+        <div class="answer" onclick="check(this, false)">polka</div>
     </div>
 
 </div>
@@ -67,8 +70,8 @@ function check(element, correct) {
     if (correct) {
         element.classList.add("correct");
 
-        // uložíme, že svíčka 3 je hotová
-        localStorage.setItem("candle3", "true");
+        // uložíme, že svíčka 1 je hotová
+        localStorage.setItem("candle1", "true");
 
         // po 1 sekundě návrat na dort
         setTimeout(() => {
